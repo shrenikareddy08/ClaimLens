@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-base text-slate-100 font-sans antialiased selection:bg-brand-500/20 selection:text-brand-300;
+    background-color: #0b0f17;
+  }
+}
+
+/* Custom clean card style */
+.product-card {
+  background-color: #121824;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+}
+
+.product-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+.product-card-hover:hover {
+  background-color: #182132;
+  border-color: #334155;
+  transform: translateY(-2px);
+}
+
+/* Clean subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
